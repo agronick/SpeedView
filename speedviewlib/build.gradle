@@ -6,10 +6,15 @@ apply plugin: 'signing'
 android {
     compileSdkVersion 31
     buildToolsVersion '31.0.0'
+    namespace = "com.github.anastr.speedviewlib"
 
     defaultConfig {
         minSdkVersion 11
         targetSdkVersion 31
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_19
+        targetCompatibility = JavaVersion.VERSION_19
     }
     buildTypes {
         release {
